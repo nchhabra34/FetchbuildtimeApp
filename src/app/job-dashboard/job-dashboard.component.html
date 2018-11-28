@@ -1,0 +1,29 @@
+
+<div class="ci" style="margin: 1%" >
+</div>
+<div class="container" style="margin: 3%;">
+  <div class="panel panel-primary">
+    <div class="panel-heading">Jenkins Job Dashboard  </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th *ngFor="let key of header">
+                            {{key}}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr *ngFor="let row of jobArr">
+                        <td *ngFor="let key of header">
+                            {{row[key]}}
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+  
+</div>
